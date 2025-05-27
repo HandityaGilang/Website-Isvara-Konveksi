@@ -257,7 +257,7 @@ a:focus {
 }
 
 .slider_section .img-box img {
-  width: 275px;
+  width: 400px;
 }
 
 .slider_section .detail-box {
@@ -515,13 +515,14 @@ a:focus {
 .gift_section {
   padding-left: 45px;
   padding-right: 45px;
+  
 }
 
-.gift_section .box {
+/*.gift_section .box {
   background-color: #6929a5;
   border-radius: 15px;
   color: #ffffff;
-}
+}*/
 
 .gift_section .row {
   -webkit-box-align: center;
@@ -853,10 +854,11 @@ a:focus {
 }
 
 .layanan_section {
-  background-color: #ffffff;
+  background-color: #c5abab;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .layanan_item {
@@ -989,6 +991,162 @@ a:focus {
 .custom-indicators li.active {
   background-color: #ffffff;
 }
+
+.kenapa_kami_section {
+  background-color: #fff2f2;
+  text-align: center;
+}
+
+.kenapa_kami_section .kenapa_box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.kenapa_kami_section .kenapa_box .icon {
+  margin-bottom: 15px;
+}
+
+.kenapa_kami_section .kenapa_box .icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.kenapa_kami_section .kenapa_box h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.kenapa_kami_section .kenapa_box p {
+  color: #333;
+  font-size: 15px;
+}
+
+/* Style langkah pemesanan */
+.step-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step-list li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.step-list img {
+  width: 24px;
+  height: 24px;
+}
+
+.gift_section .box {
+  position: relative;
+  overflow: visible; /* ubah dari hidden ke visible agar gambar bisa keluar */
+  background-color: #f8cfd2; /* warna latar pink muda */
+  border-radius: 15px;
+  max-width: 1100px; /* Ukuran ideal, bisa disesuaikan */
+  margin: 0 auto;     /* Agar tetap di tengah */
+  padding: 5px;      /* Jaga agar tidak terlalu sempit */
+}
+
+.img-box-model {
+  position: absolute;
+  right: -40px; /* sesuaikan agar gambar keluar */
+  bottom: 0;
+  z-index: 2;
+}
+
+.img-box-model img {
+  height: 130%;
+  max-height: none;
+}
+
+/* Buat gambar tetap di posisi center horizontal, tapi bisa keluar vertikal */
+.img-box-model-inside {
+  position: relative;
+  z-index: 2;
+  height: 500px; /* atur tinggi sesuka Tuan */
+  overflow: visible;
+}
+
+.img-box-model-inside img {
+  height: 150%;
+  object-fit: contain;
+  transform: translateY(-12%);
+}
+
+.gallery_section {
+  padding: 60px 0;
+  background-color: #fff5f5;
+  text-align: center;
+}
+
+.gallery_container {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gallery_wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.gallery_wrapper::-webkit-scrollbar {
+  display: none; /* sembunyikan scrollbar */
+}
+
+.gallery_wrapper img {
+  height: 400px;
+  flex: 0 0 calc(25% - 15px); /* 4 gambar terlihat (25%) */
+  border-radius: 10px;
+  pointer-events: none;
+  user-select: none;
+  transition: transform 0.3s;
+}
+
+.gallery_wrapper img:hover {
+  transform: scale(1.05);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #00000088;
+  color: white;
+  font-size: 30px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: -10px;
+}
+
+.right-arrow {
+  right: -10px;
+}
+
+.gallery_wrapper {
+  cursor: grab;
+}
+
+.gallery_wrapper.dragging {
+  cursor: grabbing;
+}
+
 
 
 /* end footer section*/
