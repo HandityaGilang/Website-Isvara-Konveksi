@@ -3,7 +3,7 @@
 body {
   font-family: "poppins", sans-serif;
   color: #101010;
-  background-color: #FFEDED;
+  background-color: #ffffff;
 }
 
 .layout_padding {
@@ -854,42 +854,13 @@ a:focus {
 }
 
 .layanan_section {
-  background-color: #c5abab;
+  background-color: #ffffff;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-bottom: 60px;
 }
 
-.layanan_item {
-  padding: 15px;
-}
-
-.layanan_card {
-  background-color: #f5f5f5;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  transition: 0.3s ease;
-}
-
-.img_wrapper {
-  height: 180px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 .img_wrapper img {
   max-height: 100%;
@@ -993,7 +964,7 @@ a:focus {
 }
 
 .kenapa_kami_section {
-  background-color: #fff2f2;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -1147,7 +1118,686 @@ a:focus {
   cursor: grabbing;
 }
 
+/* HEADER STYLING */
+.modern_header {
+  background-color: #f5e7d4;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e2d4c6;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
+.header_container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav_menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav_menu a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav_icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav_icons i {
+  font-size: 18px;
+  color: #000;
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #000;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+/* HERO STYLING */
+.hero_section_new {
+  background-color: #f5e7d4;
+  padding: 100px 40px;
+}
+
+.hero_wrapper {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero_text {
+  max-width: 50%;
+}
+
+.small_text {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #444;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.big_text {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.desc {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.btn_black {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn_black:hover {
+  background-color: #333;
+}
+
+.hero_image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 600px;
+}
+
+/* HEADER MODERN */
+.modern_header {
+  background-color: #f5e7d4;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e2d4c6;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header_container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav_menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav_menu a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav_icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav_icons i {
+  font-size: 18px;
+  color: #000;
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #000;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+/* HERO SLIDER */
+.hero_slider_section {
+  background-color: #f5e7d4;
+  padding: 100px 0;
+}
+
+.hero_slide_content {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  gap: 40px;
+}
+
+.hero_text {
+  max-width: 50%;
+}
+
+.small_text {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.big_text {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.desc {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.btn_black {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn_black:hover {
+  background-color: #333;
+}
+
+.hero_image img {
+  max-width: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Swiper Bulat */
+.swiper-pagination {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  margin: 0 6px !important;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+.hero_slider_section.fullwidth {
+  background-color: #f5e7d4;
+  padding: 0;
+}
+
+.hero_slide_content.fixed-height {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 80px;
+}
+
+.hero_text_area {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero_image_area {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.hero_image_area img {
+  max-height: 100vh;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Typography */
+.small_text {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.big_text {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.desc {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.btn_black {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn_black:hover {
+  background-color: #333;
+}
+
+/* Dots Swiper */
+.swiper-pagination {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 6px !important;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+.layanan_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.layanan_produk {
+  text-align: center;
+  position: relative;
+}
+
+.layanan_gambar {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.layanan_gambar img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.layanan_gambar:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
+  transition: bottom 0.3s ease;
+}
+
+.layanan_gambar:hover .overlay {
+  bottom: 0;
+}
+
+.pesan_btn {
+  background-color: #ffffff;
+  color: #000;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.pesan_btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.produk_nama {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.produk_harga {
+  color: #555;
+  font-size: 14px;
+}
+
+.layanan_section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.layanan_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.produk_card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.produk_card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.produk_image_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.produk_image_wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.quick_btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.produk_image_wrapper:hover .quick_btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.produk_info {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.produk_nama {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.produk_harga {
+  font-size: 14px;
+  color: #777;
+}
+
+.saving_section.new_saving_style {
+  background-color: #f8e9d8;
+  padding: 0;
+}
+
+.saving_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.saving_content {
+  padding: 60px;
+  max-width: 600px;
+}
+
+.saving_content p {
+  margin-top: 10px;
+  color: #333;
+}
+
+.saving_content .btn-box {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.saving_content .btn1,
+.saving_content .btn2 {
+  padding: 10px 25px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.saving_content .btn1 {
+  background-color: #000;
+  color: #fff;
+}
+
+.saving_content .btn1:hover {
+  background-color: #333;
+}
+
+.saving_content .btn2 {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.saving_content .btn2:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.saving_image {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+}
+
+.saving_image img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.whatsapp_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 22px; /* Ukuran lebih besar */
+  font-weight: 600;
+  font-size: 16px;     /* Font lebih besar */
+  border-radius: 8px;  /* Sudut tombol lebih halus */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp_btn:hover {
+  background-color: #1ebe5d;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp_btn i {
+  font-size: 20px; /* Ikon lebih besar */
+}
+
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #25D366;
+  color: white;
+  font-size: 22px;
+  padding: 12px 16px;
+  border-radius: 50px; /* buat tombol benar-benar bulat saat tidak ada teks */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.floating-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+.floating-whatsapp .fa-whatsapp {
+  font-size: 24px;
+}
+
+/* Teks hanya muncul di layar >= 768px */
+.chat-text {
+  display: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .chat-text {
+    display: inline;
+  }
+}
+
+.faq_contact_box {
+  background-color: transparent;
+  padding: 30px;
+}
+
+.faq_contact_box h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #033b4a;
+}
+
+.faq_item {
+  display: flex;
+  align-items: center;
+  background-color: #cacaa4;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+
+.faq_item:hover {
+  background-color: #b5dfdf;
+}
+
+.faq_icon {
+  background-color: #4e4d3d;
+  color: white;
+  font-size: 22px;
+  padding: 14px;
+  border-radius: 50%;
+  margin-right: 15px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.faq_text {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.faq_text small {
+  color: #666;
+  font-size: 14px;
+}
+
+.heading_container.heading_center {
+  align-items: center;
+  text-align: center;
+}
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */

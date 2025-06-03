@@ -794,4 +794,90 @@ a:focus {
   color: #cbc9c9;
 }
 
+.hero_full {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  color: white;
+}
+
+.hero_full .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero_content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero_content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero_content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.btn-cta {
+  background-color: white;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.hero_ui {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.arrow-left {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.scroll-down {
+  color: white;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
 /* end footer section*/
