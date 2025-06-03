@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("font-awesome.min.css");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "poppins", sans-serif;
   color: #101010;
@@ -1798,6 +1802,179 @@ a:focus {
   align-items: center;
   text-align: center;
 }
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero_text_area > * {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.hero_text_area .small_text {
+  animation-delay: 0.2s;
+}
+
+.hero_text_area .big_text {
+  animation-delay: 0.4s;
+}
+
+.hero_text_area .desc {
+  animation-delay: 0.6s;
+}
+
+.hero_text_area .btn_black {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.kenapa_box {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.kenapa_box.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.kenapa_kami_section .kenapa_box:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.kenapa_kami_section .kenapa_box:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.kenapa_kami_section .kenapa_box:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.kenapa_kami_section .kenapa_box:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-left, .fade-right {
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.fade-left.animate {
+  animation: fadeLeft 0.8s ease forwards;
+}
+
+.fade-right.animate {
+  animation: fadeRight 0.8s ease forwards;
+}
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animate.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .hero_slide_content.fixed-height {
+    flex-direction: column;
+    padding: 40px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero_text_area, .hero_image_area {
+    max-width: 100%;
+    flex: unset;
+  }
+
+  .big_text {
+    font-size: 36px;
+  }
+
+  .saving_section .row,
+  .gift_section .row {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .saving_content, .gift_section .detail-box {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .layanan_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery_wrapper img {
+    flex: 0 0 70%;
+    height: 250px;
+  }
+
+  .faq_item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav_menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
