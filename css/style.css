@@ -1975,6 +1975,52 @@ a:focus {
   }
 }
 
+#preloader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white; /* bisa diganti sesuai warna brand */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  transition: opacity 0.6s ease, visibility 0.6s;
+}
+
+#preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Tombol WhatsApp khusus untuk smartphone */
+.floating-wa-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .floating-wa-mobile {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #25D366;
+    color: white;
+    font-size: 24px;
+    padding: 14px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+  }
+
+  .floating-wa-mobile:hover {
+    background-color: #1ebe5d;
+  }
+}
+
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */

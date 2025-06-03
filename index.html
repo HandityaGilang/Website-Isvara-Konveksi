@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
 
 <head>
   <!-- Basic -->
@@ -32,6 +37,19 @@
 </head>
 
 <body>
+
+  <!-- Preloader Lottie -->
+<div id="preloader">
+  <dotlottie-player
+  src="https://lottie.host/898bc5a8-18a1-4e75-8849-af3a72f971b4/UemebTMoAJ.json"
+  background="transparent"
+  speed="1"
+  style="width: 300px; height: 300px"
+  loop
+  autoplay
+></dotlottie-player>
+</div>
+
 <!-- Header Modern -->
 <header class="modern_header">
   <div class="header_container">
@@ -653,6 +671,25 @@
 
   scrollTitle();
 </script>
+
+<script>
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+
+    // Tambahkan delay manual sebelum menghilangkan preloader
+    setTimeout(() => {
+      preloader.classList.add("fade-out");
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 600); // tunggu fade-out selesai
+    }, 1500); // delay tampil minimal 1.5 detik
+  });
+</script>
+
+<!-- Tombol WhatsApp khusus Mobile -->
+<a href="https://wa.me/6281234567890" class="floating-wa-mobile" target="_blank" aria-label="Chat WhatsApp">
+  <i class="fa fa-whatsapp"></i>
+</a>
 
 </body>
 
