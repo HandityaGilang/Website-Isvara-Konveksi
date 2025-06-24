@@ -2082,6 +2082,37 @@ a:focus {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .hero_slide_content.fixed-height {
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 30px 20px !important;
+    text-align: center;
+  }
+
+  .hero_text_area, .hero_image_area {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .hero_image_area img {
+    max-width: 90vw !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .big_text {
+    font-size: 32px !important;
+    line-height: 1.3 !important;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
+
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
