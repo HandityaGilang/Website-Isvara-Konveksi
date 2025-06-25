@@ -2035,6 +2035,26 @@ a:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .produk_card {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #ddd;
+  }
+
+  .produk_nama,
+  .produk_harga {
+    color: #000000 !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .produk_card {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+}
+
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
