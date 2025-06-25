@@ -2021,6 +2021,20 @@ a:focus {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .gallery_wrapper img {
+    height: auto !important;
+    max-height: 250px !important;
+    flex: 0 0 70% !important;
+    object-fit: cover !important;
+  }
+
+  .gallery_wrapper {
+    gap: 10px !important;
+    padding: 10px !important;
+  }
+}
+
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
